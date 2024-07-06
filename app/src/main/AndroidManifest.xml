@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppMatematico"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Model.Google.Vgoogle"
+            android:exported="false"
+            android:label="Google Drive">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.SeletorAcesso" />
+        </activity>
+        <activity
+            android:name=".View.SeletorAcesso"
+            android:exported="false" />
+        <activity
+            android:name=".Model.Eq2Grau.EquacaoSegundoGrau"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.Eq2Grau.Vequacao2grau"
+            android:exported="false"
+            android:label="Videos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.Eq2Grau.EquacaoSegundoGrau" />
+        </activity>
+        <activity
+            android:name=".Model.Eq2Grau.MaterialApoioEq2grau"
+            android:exported="false"
+            android:label="Material">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.Eq2Grau.EquacaoSegundoGrau" />
+        </activity>
+        <activity
+            android:name=".Model.Eq1Grau.EquacaoPrimeiroGrau"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.Eq1Grau.Vequacao1grau"
+            android:exported="false"
+            android:label="Videos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.Eq1Grau.EquacaoPrimeiroGrau" />
+        </activity>
+        <activity
+            android:name=".Model.Eq1Grau.MaterialApoioEq1grau"
+            android:exported="false"
+            android:label="Material">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.Eq1Grau.EquacaoPrimeiroGrau" />
+        </activity>
+        <activity
+            android:name=".Model.PG.PG"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.PG.Vpg"
+            android:exported="false"
+            android:label="Videos PG">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.PG.PG" />
+        </activity>
+        <activity
+            android:name=".Model.PG.MaterialApoioPG"
+            android:exported="false"
+            android:label="Material">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.PG.PG" />
+        </activity>
+        <activity
+            android:name=".Model.PA.PA"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.PA.Vpa"
+            android:exported="false"
+            android:label="Videos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.PA.PA" />
+        </activity>
+        <activity
+            android:name=".Model.PA.MaterialApoioPA"
+            android:exported="false"
+            android:label="Material">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.PA.PA" />
+        </activity>
+        <activity
+            android:name=".Model.Proporcao.Proporcao"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.Proporcao.Vproporcao"
+            android:exported="false"
+            android:label="Videos sobre proporcao">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.Proporcao.Proporcao" />
+        </activity>
+        <activity
+            android:name=".Model.Proporcao.MaterialApoioProporcao"
+            android:exported="false"
+            android:label="@string/label_pdf_proporcao">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.Proporcao.Proporcao" />
+        </activity>
+        <activity
+            android:name=".Model.Porcentagem.Porcentagem"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.Porcentagem.Vporcentagem"
+            android:exported="false"
+            android:label="Videos sobre porcentagem">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.Porcentagem.Porcentagem" />
+        </activity>
+        <activity
+            android:name=".Model.Porcentagem.MaterialApoioPorcentagem"
+            android:exported="false"
+            android:label="@string/label_pdf_porcentagem">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.Porcentagem.Porcentagem" />
+        </activity>
+        <activity
+            android:name=".Model.SenoCossenoTangente.SenoCossenoTangente"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.SenoCossenoTangente.VsenoCossenoTangente"
+            android:exported="false"
+            android:label="Videos sobre seno cosseno tangente">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.SenoCossenoTangente.SenoCossenoTangente" />
+        </activity>
+        <activity
+            android:name=".Model.SenoCossenoTangente.MaterialApoioSenoCossenoTangente"
+            android:exported="false"
+            android:label="Material seno cosseno tangente">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.SenoCossenoTangente.SenoCossenoTangente" />
+        </activity>
+        <activity
+            android:name=".Model.PerimetroQuadrado.PerimetroQuadrado"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.PerimetroQuadrado.MaterialApoioPerimetroQuadrado"
+            android:exported="false"
+            android:label="Material perimetro quadrado">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.PerimetroQuadrado.PerimetroQuadrado" />
+        </activity>
+        <activity
+            android:name=".Model.PerimetroQuadrado.VperimetroQuadrado"
+            android:exported="false"
+            android:label="Videos sobre perimetro do quadrado">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.PerimetroQuadrado.PerimetroQuadrado" />
+        </activity>
+        <activity
+            android:name=".Model.AreaQuadrado.VareaQuadrado"
+            android:exported="false"
+            android:label="@string/label_video_area_quadrado">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.AreaQuadrado.Aquadrado" />
+        </activity>
+        <activity
+            android:name=".Model.AreaQuadrado.Aquadrado"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.AreaQuadrado.MaterialApoioAreaQuadrado"
+            android:exported="false"
+            android:label="@string/label_pdf_area_quadrado">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.AreaQuadrado.Aquadrado" />
+        </activity>
+        <activity
+            android:name=".Model.TeoremaPitagoras.Pitagoras"
+            android:exported="false"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Menu" />
+        </activity>
+        <activity
+            android:name=".Model.TeoremaPitagoras.Vpitagoras"
+            android:exported="false"
+            android:label="@string/label_video_pitagoras">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.TeoremaPitagoras.Pitagoras" />
+        </activity>
+        <activity
+            android:name=".Model.TeoremaPitagoras.MaterialApoioPitagoras"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Model.TeoremaPitagoras.Pitagoras" />
+        </activity>
+        <activity
+            android:name=".View.Menu"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="WrongManifestParent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

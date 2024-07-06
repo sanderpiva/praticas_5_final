@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">App Matemático</string>
+    <string name="conceitoPitagoras">Teorema Pitágoras: relaciona os lados de um triângulo retângulo. Segundo Teorema, o quadrado
+    da hipotensa é igual ao quadrado dos catetos</string>
+    <string name="ca1">ca1</string>
+    <string name="hip">hip</string>
+    <string name="textCa1">ca1: cateto 1</string>
+    <string name="textHip">hip: hipotenusa</string>
+    <string name="textCa2">ca2: cateto2</string>
+    <string name="ca2">ca2</string>
+    <string name="btnCalculaHipotenusa">Calcula hipotenusa</string>
+    <string name="textResultadoHipotenusa">ResultadoHipotenusa</string>
+    <string name="label_video_pitagoras">Videos sobre pitagoras</string>
+    <string name="conceitoAreaQuadrado">Area quadrado: Para calcular a sua área, multiplicamos a sua base e a sua altura,
+        e, como os lados são congruentes, calculamos o quadrado da medida do lado (L).</string>
+    <string name="btnCalculaAreaQuadrado">Calcula area quadrado</string>
+    <string name="textResultadoAreaQuadrado">Resultado area do quadrado</string>
+    <string name="label_video_area_quadrado">Videos sobre area quadrado</string>
+    <string name="formulaAreaQuadrado">Fórmula área do quadrado: ( L )^2</string>
+    <string name="simbolo">( L )</string>
+    <string name="pratiqueAreaQuadrado">PRATIQUE! Insira ( L )</string>
+    <string name="pratiquePitagoras">PRATIQUE! Insira ca1 e ca2</string>
+    <string name="textViewLabelAreaQuadrado">Area quadrado = </string>
+    <string name="potencia2">^2</string>
+    <string name="videoAreaQuadrado">Video</string>
+    <string name="videoPitagoras">Video</string>
+    <string name="hipInterrogação">hip ?</string>
+    <string name="btnAMSGrqPDFPitagoras">arq. pdf Pitagoras indisponivel</string>
+    <string name="btnMSGArqPDFAreaQuadrado">arq. pdf Area Quadrado indisponivel</string>
+    <string name="label_pdf_area_quadrado">Material area quadrado</string>
+    <string name="label_pdf_pitagoras">Material pitagoras</string>
+    <string name="label_pdf_porcentagem">Material porcentagem</string>
+    <string name="label_pdf_proporcao">Material proporcao</string>
+    <string name="comentario">unidades² pode ser qualquer medida ao quadrado, como cm²</string>
+    <string name="hipTemRaizExata">Hipotenusa tem raíz exata quando resultado é inteiro: Ex: 8.0</string>
+    <string name="hipNaoTemRaizExata">Hipotenusa não tem raíz exata se for decimal: Ex: 8.1</string>
+    <string name="simulacao">Posicione dois dedos sob quadrado e tente esticá-lo</string>
+    <string name="lado2AreaQuadrado">lado 2</string>
+    <string name="lado1AreaQuadrado">lado 1</string>
+    <string name="areaQuadrado">Area: 100 unidades^2</string>
+    <string name="conceitoPerimetroQuadrado">Perímetro quadrado: Considerando que os lados (L) do quadrado são iguais, o perímetro do quadrado (P) pode ser obtido por meio de duas fórmulas, sendo: P = L + L + L + L ou P = 4 x L.</string>
+    <string name="ladoPerimetroQuadrado">L</string>
+    <string name="textResultadoPerimtroQuadrado">Resultado perimetro do quadrado</string>
+    <string name="pratiquePerimetroQuadrado">Pratique o perimetro do quadrado: Insira lado (L)</string>
+    <string name="FormulaPerimetroQuadrado">Vamos considerar P = 4 x L</string>
+    <string name="ConteudoSenoCossenoTangente">Seno: É a divisão do cateto oposto pela hipotenusa de um ângulo. Cosseno: É a divisão do cateto adjascente pela hipotenusa de um ângulo. Tangente: É a divisão do cateto oposto pelo cateto adjascente de um ângulo.</string>
+    <string name="menuBtnPitagoras">Teorema Pitágoras</string>
+    <string name="menuBtnAreaQuadrado">Área quadrado</string>
+    <string name="menuBtnPerimetroQuadrado">Perimetro quadrado</string>
+    <string name="menuBtnSenoCossenoTangente">Seno Cosseno Tangente</string>
+    <string name="boasVindas">EXPERIMENTE NOSSOS CONTEÚDOS</string>
+    <string name="pratiqueSenoCossenoTangente">Pratique seno cosseno tangente: Insira co, cad e hip</string>
+    <string name="materialApoio">Material Apoio</string>
+    <string name="pa">Progressao Aritmética PA: Sequência numérica em que cada termo, a partir do segundo, é igual ao anterior somado com um número fixo, chamado razão ou r </string>
+    <string name="textViewAn">an: termo geral</string>
+    <string name="textViewA1">a1: primeiro termo</string>
+    <string name="textViewN">n: número de termos</string>
+    <string name="textViewR">r: razão</string>
+    <string name="textViewAnFormula">an</string>
+    <string name="editTextAn">an</string>
+    <string name="editTextA1">a1</string>
+    <string name="editTextNmenosUm">(n-1)</string>
+    <string name="editTextR">r</string>
+    <string name="btnCalcularPA">Calcular An</string>
+    <string name="textViewResultadoAn">Resultado: an </string>
+    <string name="textViewResultadoA1">Resultado: a1:</string>
+    <string name="textViewResultadoNmenosUm">Resultado: (n-1):</string>
+    <string name="textViewResultadoR">Resultado: r:</string>
+
+</resources>

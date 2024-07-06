@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Model.TeoremaPitagoras.Pitagoras">
+
+    <TextView
+        android:id="@+id/textViewConceitoPitagoras"
+        android:layout_width="377dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens"
+        android:layout_marginEnd="@dimen/dimens"
+        android:justificationMode="inter_word"
+        android:text="@string/conceitoPitagoras"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewTrianguloPitagoras"
+        android:layout_width="0dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens"
+        android:layout_marginEnd="@dimen/dimens"
+        app:layout_constraintEnd_toStartOf="@+id/textViewHipotenusa"
+        app:layout_constraintStart_toEndOf="@+id/editTextCA1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPratiquePitagoras"
+        app:srcCompat="@drawable/triangulotheta"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextCA1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens"
+        android:ems="10"
+        android:hint="@string/ca1"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="2"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPratiquePitagoras" />
+
+    <TextView
+        android:id="@+id/textViewCa1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens"
+        android:text="@string/textCa1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPitagoras" />
+
+    <TextView
+        android:id="@+id/textViewHip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens"
+        android:layout_marginEnd="@dimen/dimens"
+        android:text="@string/textHip"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCa2"
+        app:layout_constraintStart_toEndOf="@+id/textViewCa1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPitagoras" />
+
+    <TextView
+        android:id="@+id/textViewCa2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens"
+        android:layout_marginEnd="@dimen/dimens"
+        android:text="@string/textCa2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPitagoras" />
+
+    <Button
+        android:id="@+id/btnCalculaHipotenusa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dimens"
+        android:text="@string/btnCalculaHipotenusa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCA2" />
+
+    <EditText
+        android:id="@+id/editTextCA2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/dimens"
+        android:ems="10"
+        android:hint="@string/ca2"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="2"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTrianguloPitagoras" />
+
+    <TextView
+        android:id="@+id/textViewResultadoHipotenusa"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens"
+        android:layout_marginEnd="@dimen/dimens"
+        android:text="@string/textResultadoHipotenusa"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculaHipotenusa" />
+
+    <TextView
+        android:id="@+id/textViewHipTemRaizExata"
+        android:layout_width="378dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/dimens"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultadoHipotenusa" />
+
+    <TextView
+        android:id="@+id/textViewHipNaoTemRaizExata"
+        android:layout_width="378dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens"
+        android:layout_marginEnd="@dimen/dimens"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHipTemRaizExata" />
+
+    <Button
+        android:id="@+id/btnVideoPitagoras"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/dimens"
+        android:layout_marginEnd="@dimen/dimens"
+        android:text="@string/videoPitagoras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMaterialApoioPitagoras"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHip" />
+
+    <TextView
+        android:id="@+id/textViewPratiquePitagoras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens"
+        android:layout_marginEnd="@dimen/dimens"
+        android:text="@string/pratiquePitagoras"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVideoPitagoras" />
+
+    <TextView
+        android:id="@+id/textViewHipotenusa"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/dimens"
+        android:text="@string/hipInterrogação"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPratiquePitagoras" />
+
+    <Button
+        android:id="@+id/btnMaterialApoioPitagoras"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginTop="@dimen/dimens"
+        android:layout_marginEnd="8dp"
+        android:text="@string/materialApoio"
+        app:layout_constraintEnd_toStartOf="@+id/btnVideoPitagoras"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHip" />
+
+    <ImageView
+        android:id="@+id/copyrights"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="@dimen/dimens"
+        android:layout_marginEnd="@dimen/dimens"
+        android:layout_marginBottom="@dimen/dimens2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHipNaoTemRaizExata"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logotipo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimens">16dp</dimen>
+    <dimen name="dim_marge">16dp</dimen>
+    <dimen name="dimens2">8dp</dimen>
+    <dimen name="dimens3">55dp</dimen>
+</resources>

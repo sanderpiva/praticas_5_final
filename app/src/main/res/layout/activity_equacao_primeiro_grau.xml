@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/igual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Model.Eq1Grau.EquacaoPrimeiroGrau">
+
+        <TextView
+            android:id="@+id/textViewConceitoEquacaoPrimeiroGrau"
+            android:layout_width="381dp"
+            android:layout_height="117dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:justificationMode="inter_word"
+            android:padding="0dp"
+            android:text="Equacao 1º grau é uma equação que possui incógnita com grau 1. Equações são sentenças matemáticas que possuem incógnitas, as quais são letras que representam valores desconhecidos, e igualdade.
+            Fórmula ax + b = 0, em que a e b são números reais, e a é diferente de 0. Raíz: y = ax + b -> 0 = ax + b"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dimens"
+            android:text="y: função"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMaterialApoioEquacaoPrimeiroGrau"/>
+
+        <TextView
+            android:id="@+id/textViewA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="16dp"
+            android:text="a: coeficiente angular"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewY" />
+
+        <TextView
+            android:id="@+id/textViewPratique"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Pratique: Preencha 'a', 'operador', 'b' e calcule a raiz"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewB" />
+
+        <ImageView
+            android:id="@+id/copyrights"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResutado1EquacaoPrimeiroGrau"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/logotipo" />
+
+        <Button
+            android:id="@+id/btnMaterialApoioEquacaoPrimeiroGrau"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Material Apoio"
+            app:layout_constraintEnd_toStartOf="@+id/btnVideoEquacaoPrimeiroGrau"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoEquacaoPrimeiroGrau" />
+
+        <Button
+            android:id="@+id/btnVideoEquacaoPrimeiroGrau"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnMaterialApoioEquacaoPrimeiroGrau"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoEquacaoPrimeiroGrau" />
+
+        <TextView
+            android:id="@+id/textViewValorX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/dimens"
+            android:text="x: valor do eixo x"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA" />
+
+        <TextView
+            android:id="@+id/textViewOperador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/dimens"
+            android:text="operador: +, -, *, /"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewValorX" />
+
+        <TextView
+            android:id="@+id/textViewResutado1EquacaoPrimeiroGrau"
+            android:layout_width="378dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="Resultado"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalcularEquacaoPrimeiroGrau" />
+
+        <Button
+            android:id="@+id/btnCalcularEquacaoPrimeiroGrau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Calcular Raíz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <EditText
+            android:id="@+id/editTextCoeficienteAngular"
+            android:layout_width="53dp"
+            android:layout_height="48dp"
+            android:maxLength="2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="a"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toStartOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPratique" />
+
+        <EditText
+            android:id="@+id/editTextOperadorEqPrimeiroGrau"
+            android:layout_width="80dp"
+            android:maxLength="1"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="operador"
+            android:inputType="text"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPratique" />
+
+        <EditText
+            android:id="@+id/editTextCoeficienteB"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="b"
+            android:inputType="number"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/editTextOperadorEqPrimeiroGrau"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPratique" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="32dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="32dp"
+            android:text="y"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPratique" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="="
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPratique" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="x"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/editTextCoeficienteAngular"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPratique" />
+
+        <TextView
+            android:id="@+id/textViewB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="b: coeficiente linear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOperador" />
+
+        <TextView
+            android:id="@+id/textViewResult2Eq1grau"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResutado1EquacaoPrimeiroGrau" />
+
+        <TextView
+            android:id="@+id/textViewResult3Eq1grau"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResult2Eq1grau" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

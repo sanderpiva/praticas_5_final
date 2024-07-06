@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="seletor_array">
+        <item>Seletor de conteúdos matemáticos</item>
+        <item>Teorema de Pitagoras</item>
+        <item>Área do quadrado</item>
+        <item>Seno, Cosseno, Tangente</item>
+        <item>Perimetro quadrado</item>
+        <item>Progressão Aritimética  - PA</item>
+        <item>Progressão Geométrica - PG</item>
+        <item>Porcentagem</item>
+        <item>Proporcao</item>
+        <item>Equacao 1 grau</item>
+        <item>Equacao 2 grau</item>
+    </string-array>
+</resources>

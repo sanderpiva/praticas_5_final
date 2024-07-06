@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/igual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Model.PA.PA">
+
+        <TextView
+            android:id="@+id/textViewConceitoPA"
+            android:layout_width="378dp"
+            android:layout_height="77dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:justificationMode="inter_word"
+            android:padding="0dp"
+            android:text="@string/pa"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewAnPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="32dp"
+            android:text="@string/textViewAn"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMaterialApoioPA" />
+
+        <TextView
+            android:id="@+id/textViewA1PA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:text="@string/textViewA1"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAnPA" />
+
+        <TextView
+            android:id="@+id/textViewN_PA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:text="@string/textViewN"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA1PA" />
+
+        <TextView
+            android:id="@+id/textViewR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:text="@string/textViewR"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewN_PA" />
+
+        <EditText
+            android:id="@+id/editTextTextR"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="@string/editTextR"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewR" />
+
+        <EditText
+            android:id="@+id/editTextNmenosUm_PA"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="@string/editTextNmenosUm"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewX"
+            app:layout_constraintTop_toBottomOf="@+id/textViewR" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:layout_marginEnd="@dimen/dim_marge"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNmenosUm_PA"
+            app:layout_constraintTop_toBottomOf="@+id/textViewR"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <EditText
+            android:id="@+id/editTextA1_PA"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:maxLength="2"
+            android:ems="10"
+            android:hint="@string/editTextA1"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textViewR" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:layout_marginEnd="@dimen/dim_marge"
+            app:layout_constraintEnd_toStartOf="@+id/editTextA1_PA"
+            app:layout_constraintTop_toBottomOf="@+id/textViewR"
+            app:srcCompat="@drawable/igual" />
+
+        <Button
+            android:id="@+id/btnCalcularPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:text="@string/btnCalcularPA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNmenosUm_PA" />
+
+        <TextView
+            android:id="@+id/textViewResultadoAn_PA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:text="@string/textViewResultadoAn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalcularPA" />
+
+        <ImageView
+            android:id="@+id/imageViewX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:layout_marginEnd="@dimen/dim_marge"
+            app:layout_constraintEnd_toStartOf="@+id/editTextTextR"
+            app:layout_constraintTop_toBottomOf="@+id/textViewR"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <TextView
+            android:id="@+id/textViewAnFormula"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:text="@string/textViewAnFormula"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewR" />
+
+        <Button
+            android:id="@+id/btnMaterialApoioPA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="8dp"
+            android:text="Material Apoio"
+            app:layout_constraintEnd_toStartOf="@+id/btnVideoPA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPA" />
+
+        <Button
+            android:id="@+id/btnVideoPA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnMaterialApoioPA"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPA" />
+
+        <ImageView
+            android:id="@+id/copyrights"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="@dimen/dimens"
+            android:layout_marginBottom="@dimen/dimens2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResultadoAn_PA"
+            app:layout_constraintVertical_bias="0.809"
+            app:srcCompat="@drawable/logotipo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

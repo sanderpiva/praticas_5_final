@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/igual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Model.PG.PG">
+
+        <TextView
+            android:id="@+id/textViewConceitoPG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:justificationMode="inter_word"
+            android:padding="0dp"
+            android:text="Progressao Geométrica PG: Sequência de numeros não nulos em que cada termo posterior, a partir do segundo, é igual ao anterior multiplicado por um número fixo: razão ou q"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewAnPG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="24dp"
+            android:text="an: termo geral"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMaterialApoioPG" />
+
+        <TextView
+            android:id="@+id/textViewA1PG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:text="a1: primeiro termo"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAnPG" />
+
+        <TextView
+            android:id="@+id/textViewN_PG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:text="n: número de termos"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewA1PG" />
+
+        <TextView
+            android:id="@+id/textViewQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:text="q: razão"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewN_PG" />
+
+        <EditText
+            android:id="@+id/editTextNmenosUm_PG"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:maxLength="2"
+            android:ems="10"
+            android:hint="(n-1)"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQ" />
+
+        <EditText
+            android:id="@+id/editTextQ_PG"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="q"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewX"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQ" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            app:layout_constraintEnd_toStartOf="@+id/editTextQ_PG"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQ"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <EditText
+            android:id="@+id/editTextA1_PG"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="a1"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQ" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            app:layout_constraintEnd_toStartOf="@+id/editTextA1_PG"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQ"
+            app:srcCompat="@drawable/igual" />
+
+        <Button
+            android:id="@+id/btnCalcularPG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:text="Calcular an"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextQ_PG" />
+
+        <TextView
+            android:id="@+id/textViewResultadoAn_PG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_marge"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:text="Resultado: an"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalcularPG" />
+
+        <ImageView
+            android:id="@+id/imageViewX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_marge"
+            android:layout_marginEnd="@dimen/dim_marge"
+            app:layout_constraintEnd_toStartOf="@+id/editTextNmenosUm_PG"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQ"
+            app:srcCompat="@drawable/pot" />
+
+        <TextView
+            android:id="@+id/textViewAnFormula"
+            android:layout_width="48dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="@dimen/dim_marge"
+            android:text="an"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQ" />
+
+        <Button
+            android:id="@+id/btnMaterialApoioPG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="8dp"
+            android:text="Material Apoio"
+            app:layout_constraintEnd_toStartOf="@+id/btnVideoPG"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPG" />
+
+        <Button
+            android:id="@+id/btnVideoPG"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnMaterialApoioPG"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPG" />
+
+        <ImageView
+            android:id="@+id/copyrights"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="@dimen/dimens"
+            android:layout_marginBottom="@dimen/dimens2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResultadoAn_PG"
+            app:layout_constraintVertical_bias="0.875"
+            app:srcCompat="@drawable/logotipo" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+

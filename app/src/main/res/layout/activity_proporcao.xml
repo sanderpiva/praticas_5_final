@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Model.Proporcao.Proporcao"
+        android:id="@+id/activity_proporcao">
+
+
+        <TextView
+            android:id="@+id/textViewConceitoProporcao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:justificationMode="inter_word"
+            android:text="Proporção: Trata-se de uma igualdade entre razões. Duas razões são proporcionais quando o resultado da divisão entre o numerador e o denominador da primeira razão é igual ao resultado da divisão da segunda"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewProporcaoDireta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="16dp"
+            android:justificationMode="inter_word"
+            android:text="Clique no botão Material de Apoio ou Videos para maiores esclarecimentos e depois pratique realizando um exercício"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoProporcao" />
+
+        <TextView
+            android:id="@+id/textViewConteudo1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:text="A"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAreaPraticaProporcao" />
+
+        <ImageView
+            android:id="@+id/imageViewProporcaoX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="244dp"
+            android:layout_marginEnd="@dimen/dimens"
+            app:layout_constraintEnd_toStartOf="@+id/editTextValor1b"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toEndOf="@+id/editTextValor1a"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoProporcao"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewConteudo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="B"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProporcaoX"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAreaPraticaProporcao" />
+
+        <EditText
+            android:id="@+id/editTextValor1a"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="insira valor A"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConteudo1" />
+
+        <EditText
+            android:id="@+id/editTextValor1b"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/dimens"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="insira valor B"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="viewEnd"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConteudo2" />
+
+        <EditText
+            android:id="@+id/editTextValor1c"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="52dp"
+            android:ems="10"
+            android:maxLength="2"
+            android:hint="insira valor C"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextValor1a" />
+
+        <Button
+            android:id="@+id/buttonCalcularProporcao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/dimens3"
+            android:layout_marginEnd="16dp"
+            android:text="Calcular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextValor1c" />
+
+        <TextView
+            android:id="@+id/textViewResultadoPr"
+            android:layout_width="146dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="12dp"
+            android:text="D = ?"
+            android:textAlignment="viewEnd"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextValor1b" />
+
+        <Button
+            android:id="@+id/btnMaterialApoioProporcao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/dimens2"
+            android:text="Material Apoio"
+            app:layout_constraintEnd_toStartOf="@+id/btnVideoProporcao"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewProporcaoDireta" />
+
+        <Button
+            android:id="@+id/btnVideoProporcao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens2"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnMaterialApoioProporcao"
+            app:layout_constraintTop_toBottomOf="@+id/textViewProporcaoDireta" />
+
+        <TextView
+            android:id="@+id/textViewAreaPraticaProporcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Pratique"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMaterialApoioProporcao" />
+
+        <ImageView
+            android:id="@+id/copyrights"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:layout_marginBottom="@dimen/dimens2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescResultadoProporcao"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/logotipo" />
+
+        <TextView
+            android:id="@+id/textViewDescResultadoProporcao"
+            android:layout_width="375dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Resultado"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLegenda2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="C"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextValor1a" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="D"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextValor1b" />
+
+        <TextView
+            android:id="@+id/textViewLegenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCalcularProporcao" />
+
+        <TextView
+            android:id="@+id/textViewLegenda2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="36dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonCalcularProporcao" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+

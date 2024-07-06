@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Model.Porcentagem.Porcentagem"
+        android:id="@+id/activity_porcentagem">
+
+        <TextView
+            android:id="@+id/textViewConceitoPorcentagem1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:background="@color/white"
+            android:justificationMode="inter_word"
+            android:text="Porcentagem: Trata-se da razão entre um número e 100, e representamos essa razão pelo símbolo %. É utilizada para representar partes de algo inteiro. Ex: 50%, (50/100) ou 0,50"
+            android:textColor="@color/cinza"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewConceitoPorcentagem2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:background="@color/white"
+            android:justificationMode="inter_word"
+            android:text="E quando queremos somar ou subtrair uma porcentagem de um valor? Clique no botão Material de Apoio ou Videos para maiores esclarecimentos e depois pratique operações de cálculo com porcentagem"
+            android:textColor="@color/cinza"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPorcentagem1" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Calcular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextValor2"
+            tools:ignore="VisualLintButtonSize" />
+
+        <TextView
+            android:id="@+id/textViewResultadoPorcentagem"
+            android:layout_width="377dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="@dimen/dimens"
+            android:background="@color/white"
+            android:text="Resultado"
+            android:textColor="@color/cinza"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSubPorcentagem" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPraticaPorcentagem"
+            app:srcCompat="@drawable/por100"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <EditText
+            android:id="@+id/editTextValor2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="24dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:maxLength="3"
+            android:hint="valor 2"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPraticaPorcentagem" />
+
+        <EditText
+            android:id="@+id/editTextOperador"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:maxLength="1"
+            android:hint="+ ou  -"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/editTextValor2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPraticaPorcentagem" />
+
+        <EditText
+            android:id="@+id/editTextValor1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:autofillHints=""
+            android:ems="10"
+            android:maxLength="3"
+            android:hint="valor 1"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/editTextOperador"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPraticaPorcentagem"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/btnMaterialApoioPorcentagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens2"
+            android:text="Material Apoio"
+            app:layout_constraintEnd_toStartOf="@+id/btnVideoPorcentagem"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPorcentagem2" />
+
+        <Button
+            android:id="@+id/btnVideoPorcentagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens2"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnMaterialApoioPorcentagem"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoPorcentagem2" />
+
+        <TextView
+            android:id="@+id/textViewPraticaPorcentagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Pratique operações de cálculo com porcentagem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMaterialApoioPorcentagem" />
+
+        <ImageView
+            android:id="@+id/copyrights"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:layout_marginBottom="@dimen/dimens2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResultadoPorcentagem"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/logotipo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Fórmula: Soma de porcentagem: valor1*(1+valor2/100)"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+        <TextView
+            android:id="@+id/textViewSubPorcentagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Fórmula: Subtracao de porcentagem: valor1*(1-valor2/100)"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

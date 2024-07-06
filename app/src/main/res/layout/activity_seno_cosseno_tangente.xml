@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Model.SenoCossenoTangente.SenoCossenoTangente">
+
+        <TextView
+            android:id="@+id/textViewConceitoSenoCossenoTangente"
+            android:layout_width="376dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:justificationMode="inter_word"
+            android:text="@string/ConteudoSenoCossenoTangente"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewTrianguloSenoCossenoTangente"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            app:layout_constraintEnd_toStartOf="@+id/editTextHip"
+            app:layout_constraintStart_toEndOf="@+id/editTextCo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPratiqueSenoCossenoTangente"
+            app:srcCompat="@drawable/triangulotheta"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextCo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:ems="10"
+            android:hint="co"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="2"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPratiqueSenoCossenoTangente" />
+
+        <TextView
+            android:id="@+id/textViewCo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:text="co: cateto oposto"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoSenoCossenoTangente" />
+
+        <TextView
+            android:id="@+id/textViewHip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="hip: hipotenusa"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textViewCa"
+            app:layout_constraintStart_toEndOf="@+id/textViewCo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoSenoCossenoTangente" />
+
+        <TextView
+            android:id="@+id/textViewCa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="cad: cateto adjacente"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConceitoSenoCossenoTangente" />
+
+        <Button
+            android:id="@+id/btnCalculaSenoCossenoTangente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Calcula"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCa" />
+
+        <EditText
+            android:id="@+id/editTextCa"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:ems="10"
+            android:hint="cad"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="2"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewTrianguloSenoCossenoTangente" />
+
+        <TextView
+            android:id="@+id/textViewResultadoSeno"
+            android:layout_width="375dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens2"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Resultado do Seno"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCalculaSenoCossenoTangente" />
+
+        <TextView
+            android:id="@+id/textViewResultadoCosseno"
+            android:layout_width="378dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Resultado Cosseno"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResultadoSeno" />
+
+        <TextView
+            android:id="@+id/textViewResultadoTangente"
+            android:layout_width="377dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="Resultado Tangente"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResultadoCosseno" />
+
+        <Button
+            android:id="@+id/btnVideoSenoCossenoTangente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="@string/videoPitagoras"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnMaterialApoioSenoCossenoTangente"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHip" />
+
+        <TextView
+            android:id="@+id/textViewPratiqueSenoCossenoTangente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:text="@string/pratiqueSenoCossenoTangente"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnVideoSenoCossenoTangente" />
+
+        <Button
+            android:id="@+id/btnMaterialApoioSenoCossenoTangente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="8dp"
+            android:text="@string/materialApoio"
+            app:layout_constraintEnd_toStartOf="@+id/btnVideoSenoCossenoTangente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHip" />
+
+        <ImageView
+            android:id="@+id/copyrights"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens2"
+            android:layout_marginEnd="@dimen/dimens"
+            android:layout_marginBottom="@dimen/dimens2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResultadoTangente"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/logotipo" />
+
+        <EditText
+            android:id="@+id/editTextHip"
+            android:layout_width="59dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/dimens"
+            android:layout_marginTop="@dimen/dimens"
+            android:layout_marginEnd="@dimen/dimens"
+            android:ems="10"
+            android:hint="hip"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:maxLength="2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewTrianguloSenoCossenoTangente"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPratiqueSenoCossenoTangente" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
