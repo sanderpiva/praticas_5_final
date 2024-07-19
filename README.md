@@ -13,5 +13,6 @@ acompanhar suas postagens, as quais serão acessadas posteriormente pelos seus a
 assim como os links do repositorio do professor representado pelo botão Material de Apoio. Essa ação é realizada no código.
 </p>
 <p>Como funciona? Para testar o código no computador, basta instalar o Android Studio e pedir para executar o projeto. No celular, basta instalar a 'APK' que vem junto com o código.
+  Link do Android Studio: https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio?hl=pt-br#0
 </p>
 </html>
