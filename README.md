@@ -1,5 +1,5 @@
 <html>
-  <h1>Aplocativo Matemático</h1>
+  <h1>Aplicativo Matemático</h1>
   <p>O aplicativo matemático, basicamente, trata-se de um software desenvolvido em Android Studio para ajudar os alunos a entenderem mais sobre os conteúdos da matemática. 
 Atualmente, existem 10 funcionalidades disponíveis que podem ser acessadas ao clicar nos 'cards' da funcionalidade.
 Entrando nela, por exemplo, na funcionalidade Progressão Aritmética (PA), o aluno encontrará uma definição conceitual sobre o assunto e 3 botões clicáveis: um para acessar
