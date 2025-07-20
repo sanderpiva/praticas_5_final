@@ -12,7 +12,7 @@ acompanhar suas postagens, as quais serão acessadas posteriormente pelos seus a
   <p>O professor será direcionado ao Google drive e lá precisará fazer login e digitar sua senha respectiva. Tanto a senha quanto o link do Google drive para acessar o repositório do professor (botão Material de Apoio) são customizados ou personalizáveis. Senha padrão para testes: Professor: 1 2 3.  Aluno 3 4 5. As senhas devem ser trocadas depois para sua segurança, 
 assim como os links do repositorio do professor representado pelo botão Material de Apoio. Essa ação é realizada no código.
 </p>
-<p>Como funciona? Para testar o código no computador, basta instalar o Android Studio e pedir para executar o projeto. No celular, basta instalar o arquivo com extensão 'apk' que vem junto com o projeto: app_matematico_fase3.apk.
+<p>Como funciona? Para testar o código no computador, basta instalar o Android Studio e pedir para executar o projeto. No celular, basta instalar o arquivo com extensão 'apk' que vem junto com o projeto: https://github.com/sanderpiva/praticas_5_final/blob/master/app_matematico_fase3.apk.
   Link do Android Studio: https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio?hl=pt-br#0
 </p>
 </html>
