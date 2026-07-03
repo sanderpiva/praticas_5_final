@@ -1,18 +1,44 @@
-<html>
-  <h1>Aplicativo Matemático</h1>
-  <p>O aplicativo matemático, basicamente, trata-se de um software desenvolvido em Android Studio para ajudar os alunos a entenderem mais sobre os conteúdos da matemática. 
-Atualmente, existem 10 funcionalidades disponíveis que podem ser acessadas ao clicar nos 'cards' da funcionalidade.
-Entrando nela, por exemplo, na funcionalidade Progressão Aritmética (PA), o aluno encontrará uma definição conceitual sobre o assunto e 3 botões clicáveis: um para acessar
-uma playlist do Youtube com videos aulas sobre o assunto, outro para acessar o repositório do professor com postagens sobre PA e por último, um exercício de prática.
-</p>
-  <p>Nesse exercício de prática o aluno poderá inserir alguns números e operadores, que serão validados e o passo a passo da solução com a resposta será exibido em tela.
-Lembrando que a aplicação possui uma interface que direciona os alunos as funcionaldades e outra permite que o professor acesse seu repositório no Google drive para
-acompanhar suas postagens, as quais serão acessadas posteriormente pelos seus alunos. É preciso digitar uma senha para direcionar o acesso.
-</p>
-  <p>O professor será direcionado ao Google drive e lá precisará fazer login e digitar sua senha respectiva. Tanto a senha quanto o link do Google drive para acessar o repositório do professor (botão Material de Apoio) são customizados ou personalizáveis. Senha padrão para testes: Professor: 1 2 3.  Aluno 3 4 5. As senhas devem ser trocadas depois para sua segurança, 
-assim como os links do repositorio do professor representado pelo botão Material de Apoio. Essa ação é realizada no código.
-</p>
-<p>Como funciona? Para testar o código no computador, basta instalar o Android Studio e pedir para executar o projeto. No celular, basta instalar o arquivo com extensão 'apk' que vem junto com o projeto: app_matematico_fase3.apk.
-  Link do Android Studio: https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio?hl=pt-br#0
-</p>
-</html>
+# Aplicativo Matemático
+
+Este aplicativo foi desenvolvido no **Android Studio** com o objetivo de auxiliar alunos no aprendizado de conteúdos matemáticos, oferecendo uma experiência interativa e de fácil navegação.
+
+## 🚀 Funcionalidades
+
+Atualmente, o aplicativo conta com **10 funcionalidades** distintas, acessíveis diretamente através de *cards* na tela principal.
+
+### Exemplo: Progressão Aritmética (PA)
+Ao selecionar uma funcionalidade, como a PA, o aluno terá acesso a:
+*   **Definição Conceitual:** Explicação teórica sobre o tema.
+*   **Videoaulas:** Acesso direto a uma playlist do YouTube.
+*   **Material de Apoio:** Acesso ao repositório do professor (personalizável).
+*   **Exercício de Prática:** Ferramenta interativa onde o aluno insere números e operadores. O sistema valida as entradas e exibe o passo a passo da solução com o resultado final.
+
+## 🔑 Acesso e Personalização
+
+O sistema diferencia perfis de acesso (Aluno/Professor) através de autenticação por senha.
+
+*   **Acesso do Professor:** Permite o redirecionamento ao Google Drive para gestão de materiais.
+*   **Configurações:** As senhas e os links do Google Drive são configuráveis diretamente no código-fonte.
+
+> **⚠️ Atenção:** Para garantir a segurança, altere as senhas padrão antes da implementação final.
+> *   **Senha Professor:** `1 2 3`
+> *   **Senha Aluno:** `3 4 5`
+
+## 🛠 Como Executar
+
+### No Computador (Desenvolvimento)
+1.  Instale o [Android Studio](https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio?hl=pt-br#0).
+2.  Abra o projeto no Android Studio.
+3.  Compile e execute o aplicativo em um emulador ou dispositivo físico.
+
+### No Celular (Instalação)
+1.  Transfira o arquivo `app_matematico_fase3.apk` para o seu dispositivo Android.
+2.  Permita a instalação de fontes desconhecidas, caso necessário.
+3.  Instale o arquivo e inicie o aplicativo.
+
+---
+
+### Responsáveis
+*   Darlene Leão de Souza
+*   Renan Feliciano Rocha
+*   **Sander Gustavo Piva**
