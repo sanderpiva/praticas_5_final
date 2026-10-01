@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         progressBar.setVisibility(ProgressBar.VISIBLE);
         progressBar.setMax(PROGRESS_MAX);
 
-        // Iniciar o processo de carregamento gradual
+        
         new Thread(new Runnable() {
             @Override
             public void run() {
