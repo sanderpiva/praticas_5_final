@@ -4,7 +4,7 @@ Este aplicativo foi desenvolvido no **Android Studio** com o objetivo de auxilia
 
 ## 🚀 Funcionalidades
 
-Atualmente, o aplicativo conta com **10 funcionalidades** distintas, acessíveis diretamente através de *cards* na tela principal.
+Atualmente, o aplicativo conta com **10 funcionalidades** distintas, acessíveis diretamente através de *cards* na tela principal. Os *cards* foram criados pela própria equipe ao longo do projeto.
 
 ### Exemplo: Progressão Aritmética (PA)
 Ao selecionar uma funcionalidade, como a PA, o aluno terá acesso a:
