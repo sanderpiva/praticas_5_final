@@ -36,6 +36,13 @@ O sistema diferencia perfis de acesso (Aluno/Professor) através de autenticaç�
 2.  Permita a instalação de fontes desconhecidas, caso necessário.
 3.  Instale o arquivo e inicie o aplicativo.
 
+### Fotos do sistema
+
+<img width="350" height="700" alt="1" src="https://github.com/user-attachments/assets/b29be8e8-e1ab-41f1-bd4f-d60486b02f93" />
+<img width="350" height="700" alt="2" src="https://github.com/user-attachments/assets/b66bc5a7-a799-47d3-9ec8-236eb78029ff" />
+<img width="350" height="700" alt="3" src="https://github.com/user-attachments/assets/6b9e9ba4-67e5-45df-b5cb-0aec90407571" />
+<img width="350" height="700" alt="4" src="https://github.com/user-attachments/assets/0054673f-d854-4aac-bc0b-c227d2de85d3" />
+
 ---
 
 ### Responsáveis
